@@ -289,7 +289,7 @@ class _HeaderGradientePainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     final Rect rect =
-        Rect.fromCircle(center: Offset(200.0, 100.0), radius: 100);
+        Rect.fromCircle(center: const Offset(200.0, 100.0), radius: 100);
 
     const Gradient gradiente = LinearGradient(
         begin: Alignment.topLeft,
@@ -300,9 +300,9 @@ class _HeaderGradientePainter extends CustomPainter {
           Color(0xff0000ff),
         ],
         stops: [
-          0.4,
-          0.7,
-          1.0
+          0.2,
+          0.5,
+          0.8
         ]);
 
     final lapiz = Paint()..shader = gradiente.createShader(rect);

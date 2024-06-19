@@ -1,11 +1,4 @@
-import 'package:custompainter_app/screens/header_bordes_circulares_screen.dart';
-import 'package:custompainter_app/screens/header_cuadrado_screen.dart';
-import 'package:custompainter_app/screens/header_curvo_screen.dart';
-import 'package:custompainter_app/screens/header_diagonal_screen.dart';
-import 'package:custompainter_app/screens/header_gradiente_screen.dart';
-import 'package:custompainter_app/screens/header_pico_screen.dart';
-import 'package:custompainter_app/screens/header_triangulo_screen.dart';
-import 'package:custompainter_app/screens/header_waves_screen.dart';
+import 'package:custompainter_app/screens/screens.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -127,6 +120,20 @@ class HomeScreen extends StatelessWidget {
               context,
               MaterialPageRoute(
                 builder: (context) => const HeaderGradienteScreen(),
+              ),
+            );
+          },
+        ),
+        const SizedBox(
+          height: 20,
+        ),
+        _Boton(
+          texto: "Cañería",
+          function: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const CaneriaScreen(),
               ),
             );
           },
