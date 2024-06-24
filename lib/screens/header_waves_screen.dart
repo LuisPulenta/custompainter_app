@@ -8,10 +8,10 @@ class HeaderWavesScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Header Waves'),
+        title: const Text('Header Waves'),
         centerTitle: true,
       ),
-      body: HeaderWaves(),
+      body: const HeaderWaves(),
     );
   }
 }

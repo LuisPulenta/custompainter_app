@@ -11,134 +11,150 @@ class HomeScreen extends StatelessWidget {
         title: const Text('Encabezados'),
         centerTitle: true,
       ),
-      body: Column(children: [
-        const SizedBox(
-          height: 20,
-        ),
-        _Boton(
-          texto: "Encabezado Cuadrado",
-          function: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => const HeaderCuadradoScreen(),
-              ),
-            );
-          },
-        ),
-        const SizedBox(
-          height: 20,
-        ),
-        _Boton(
-          texto: "Encabezado Bordes Circulares",
-          function: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => const HeaderBordesCircularesScreen(),
-              ),
-            );
-          },
-        ),
-        const SizedBox(
-          height: 20,
-        ),
-        _Boton(
-          texto: "Encabezado Diagonal",
-          function: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => const HeaderDiagonalScreen(),
-              ),
-            );
-          },
-        ),
-        const SizedBox(
-          height: 20,
-        ),
-        _Boton(
-          texto: "Encabezado Triángulo",
-          function: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => const HeaderTrianguloScreen(),
-              ),
-            );
-          },
-        ),
-        const SizedBox(
-          height: 20,
-        ),
-        _Boton(
-          texto: "Encabezado Pico",
-          function: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => const HeaderPicoScreen(),
-              ),
-            );
-          },
-        ),
-        const SizedBox(
-          height: 20,
-        ),
-        _Boton(
-          texto: "Encabezado Curvo",
-          function: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => const HeaderCurvoScreen(),
-              ),
-            );
-          },
-        ),
-        const SizedBox(
-          height: 20,
-        ),
-        _Boton(
-          texto: "Encabezado Waves",
-          function: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => const HeaderWavesScreen(),
-              ),
-            );
-          },
-        ),
-        const SizedBox(
-          height: 20,
-        ),
-        _Boton(
-          texto: "Encabezado Gradiente",
-          function: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => const HeaderGradienteScreen(),
-              ),
-            );
-          },
-        ),
-        const SizedBox(
-          height: 20,
-        ),
-        _Boton(
-          texto: "Cañería",
-          function: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => const CaneriaScreen(),
-              ),
-            );
-          },
-        ),
-      ]),
+      body: SingleChildScrollView(
+        child: Column(children: [
+          const SizedBox(
+            height: 10,
+          ),
+          _Boton(
+            texto: "Encabezado Cuadrado",
+            function: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const HeaderCuadradoScreen(),
+                ),
+              );
+            },
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          _Boton(
+            texto: "Encabezado Bordes Circulares",
+            function: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const HeaderBordesCircularesScreen(),
+                ),
+              );
+            },
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          _Boton(
+            texto: "Encabezado Diagonal",
+            function: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const HeaderDiagonalScreen(),
+                ),
+              );
+            },
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          _Boton(
+            texto: "Encabezado Triángulo",
+            function: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const HeaderTrianguloScreen(),
+                ),
+              );
+            },
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          _Boton(
+            texto: "Encabezado Pico",
+            function: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const HeaderPicoScreen(),
+                ),
+              );
+            },
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          _Boton(
+            texto: "Encabezado Curvo",
+            function: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const HeaderCurvoScreen(),
+                ),
+              );
+            },
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          _Boton(
+            texto: "Encabezado Waves",
+            function: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const HeaderWavesScreen(),
+                ),
+              );
+            },
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          _Boton(
+            texto: "Encabezado Gradiente",
+            function: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const HeaderGradienteScreen(),
+                ),
+              );
+            },
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          _Boton(
+            texto: "Cañería",
+            function: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const CaneriaScreen(),
+                ),
+              );
+            },
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          _Boton(
+            texto: "Triangulo 3D",
+            function: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const TrianguloScreen(),
+                ),
+              );
+            },
+          ),
+        ]),
+      ),
     );
   }
 }

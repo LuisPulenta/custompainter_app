@@ -330,3 +330,89 @@ class _HeaderGradientePainter extends CustomPainter {
     return true;
   }
 }
+
+//****************** HeaderWaves **********************
+
+class Triangulo extends StatelessWidget {
+  const Triangulo({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: double.infinity,
+      height: double.infinity,
+      child: CustomPaint(
+        painter: _TrianguloPainter(),
+      ),
+    );
+  }
+}
+
+//------------------------------------------------------
+
+class _TrianguloPainter extends CustomPainter {
+  @override
+  void paint(Canvas canvas, Size size) {
+    final lapizNegro = Paint();
+    lapizNegro.color = Colors.black;
+    lapizNegro.style = PaintingStyle.stroke;
+    lapizNegro.strokeWidth = 1.0;
+
+    final lapiz = Paint();
+    lapiz.color = Colors.grey;
+    lapiz.style = PaintingStyle.fill;
+    lapiz.strokeWidth = 5.0;
+
+    final lapiz2 = Paint();
+    lapiz2.color = Colors.blueAccent;
+    lapiz2.style = PaintingStyle.fill;
+    lapiz2.strokeWidth = 5.0;
+
+    final lapiz3 = Paint();
+    lapiz3.color = Colors.lightBlue;
+    lapiz3.style = PaintingStyle.fill;
+    lapiz3.strokeWidth = 5.0;
+
+    double x = size.width / 1.3;
+    double y = size.height / 1.3;
+
+    final path = Path();
+    final path2 = Path();
+    final path3 = Path();
+
+    path.moveTo(0.6 * x, 0.1 * y);
+    path.lineTo(1.0 * x, 0.9 * y);
+    path.lineTo(0.8 * x, 0.9 * y);
+    path.lineTo(0.6 * x, 0.5 * y);
+    path.lineTo(0.2 * x, 1.3 * y);
+    path.lineTo(0.1 * x, 1.1 * y);
+    path.lineTo(0.6 * x, 0.1 * y);
+    canvas.drawPath(path, lapiz);
+    canvas.drawPath(path, lapizNegro);
+
+    path2.moveTo(0.6 * x, 0.1 * y);
+    path2.lineTo(0.8 * x, 0.1 * y);
+    path2.lineTo(1.3 * x, 1.1 * y);
+    path2.lineTo(0.5 * x, 1.1 * y);
+    path2.lineTo(0.6 * x, 0.9 * y);
+    path2.lineTo(1.0 * x, 0.9 * y);
+    path2.lineTo(0.6 * x, 0.1 * y);
+    canvas.drawPath(path2, lapiz2);
+    canvas.drawPath(path2, lapizNegro);
+
+    path3.moveTo(0.6 * x, 0.5 * y);
+    path3.lineTo(0.7 * x, 0.7 * y);
+    path3.lineTo(0.5 * x, 1.1 * y);
+    path3.lineTo(1.3 * x, 1.1 * y);
+    path3.lineTo(1.1 * x, 1.3 * y);
+    path3.lineTo(0.2 * x, 1.3 * y);
+    path3.lineTo(0.6 * x, 0.5 * y);
+    canvas.drawPath(path3, lapiz3);
+    canvas.drawPath(path3, lapizNegro);
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) {
+    return true;
+  }
+}

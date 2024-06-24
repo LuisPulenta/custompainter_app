@@ -8,3 +8,4 @@ export 'package:custompainter_app/screens/header_triangulo_screen.dart';
 export 'package:custompainter_app/screens/header_waves_screen.dart';
 export 'package:custompainter_app/screens/caneria_screen.dart';
 export 'package:custompainter_app/screens/home_screen.dart';
+export 'package:custompainter_app/screens/triangulo_screen.dart';
