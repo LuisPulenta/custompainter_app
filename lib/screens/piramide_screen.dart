@@ -1,14 +1,14 @@
 import 'package:custompainter_app/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 
-class TrianguloScreen extends StatelessWidget {
-  const TrianguloScreen({Key? key}) : super(key: key);
+class PiramideScreen extends StatelessWidget {
+  const PiramideScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Triángulo 3D'),
+        title: const Text('Pirámide 3D'),
         centerTitle: true,
       ),
       body: const Center(
