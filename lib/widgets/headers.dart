@@ -61,7 +61,7 @@ class _HeaderDiagonalPainter extends CustomPainter {
     //Propiedades del lápiz
     lapiz.color = Colors.red;
     lapiz.style = PaintingStyle.fill;
-    lapiz.strokeWidth = 5.0; //ancho del lápiz
+    lapiz.strokeWidth = 1.0; //ancho del lápiz
 
     final path = Path();
 
@@ -157,7 +157,7 @@ class _HeaderPicoPainter extends CustomPainter {
 
     //Dibujar con el path y el lápiz
     path.moveTo(0, size.height * 0.2);
-    path.lineTo(size.width * 0.5, size.height * 0.25);
+    path.lineTo(size.width * 0.5, size.height * 0.35);
     path.lineTo(size.width, size.height * 0.2);
     path.lineTo(size.width, 0);
     path.lineTo(0, 0);
@@ -257,6 +257,14 @@ class _HeaderWavesPainter extends CustomPainter {
     path.lineTo(size.width, 0);
     path.lineTo(0, 0);
 
+    path.moveTo(0, size.height);
+    path.lineTo(size.width, size.height);
+    path.lineTo(size.width, size.height * 0.75);
+    path.quadraticBezierTo(size.width * 0.75, size.height * 0.65,
+        size.width * 0.5, size.height * 0.75);
+    path.quadraticBezierTo(
+        size.width * 0.25, size.height * 0.85, 0, size.height * 0.75);
+
     canvas.drawPath(path, lapiz);
   }
 
@@ -289,7 +297,7 @@ class _HeaderGradientePainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     final Rect rect =
-        Rect.fromCircle(center: const Offset(200.0, 100.0), radius: 100);
+        Rect.fromCircle(center: const Offset(250.0, 50.0), radius: 100);
 
     const Gradient gradiente = LinearGradient(
         begin: Alignment.topLeft,

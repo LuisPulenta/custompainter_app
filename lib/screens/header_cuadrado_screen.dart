@@ -6,7 +6,6 @@ class HeaderCuadradoScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final width = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
         title: const Text('Header Cuadrado'),

@@ -9,12 +9,11 @@ class CaneriaScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
-    final cantidadX = 20;
+    const cantidadX = 20;
     final side = width / cantidadX;
     final random = Random();
-    var element = random.nextInt(22);
 
-    final colorCaneria = Colors.white;
+    const colorCaneria = Colors.white;
     return Scaffold(
         appBar: AppBar(
           title: const Text('Cañerías'),

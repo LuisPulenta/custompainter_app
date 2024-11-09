@@ -27,7 +27,6 @@ class Cruz extends StatelessWidget {
 class _CruzPainter extends CustomPainter {
   final Color color;
   const _CruzPainter({
-    Key? key,
     required this.color,
   });
   @override
@@ -87,7 +86,6 @@ class LTopLeft extends StatelessWidget {
 class _LTopLeft extends CustomPainter {
   final Color color;
   const _LTopLeft({
-    Key? key,
     required this.color,
   });
   @override
@@ -141,7 +139,6 @@ class LTopRight extends StatelessWidget {
 class _LTopRight extends CustomPainter {
   final Color color;
   const _LTopRight({
-    Key? key,
     required this.color,
   });
   @override
@@ -197,7 +194,6 @@ class LBottomLeft extends StatelessWidget {
 class _LBottomLeftPainter extends CustomPainter {
   final Color color;
   const _LBottomLeftPainter({
-    Key? key,
     required this.color,
   });
   @override
@@ -252,7 +248,6 @@ class LBottomRight extends StatelessWidget {
 class _LBottomRightPainter extends CustomPainter {
   final Color color;
   const _LBottomRightPainter({
-    Key? key,
     required this.color,
   });
   @override
@@ -307,7 +302,6 @@ class Horizontal extends StatelessWidget {
 class _HorizontalPainter extends CustomPainter {
   final Color color;
   const _HorizontalPainter({
-    Key? key,
     required this.color,
   });
   @override
@@ -359,7 +353,6 @@ class Vertical extends StatelessWidget {
 class _VerticalPainter extends CustomPainter {
   final Color color;
   const _VerticalPainter({
-    Key? key,
     required this.color,
   });
   @override
@@ -411,7 +404,6 @@ class TTop extends StatelessWidget {
 class _TTopPainter extends CustomPainter {
   final Color color;
   const _TTopPainter({
-    Key? key,
     required this.color,
   });
   @override
@@ -467,7 +459,6 @@ class TBottom extends StatelessWidget {
 class _TBottomPainter extends CustomPainter {
   final Color color;
   const _TBottomPainter({
-    Key? key,
     required this.color,
   });
   @override
@@ -523,7 +514,6 @@ class TLeft extends StatelessWidget {
 class _TLeftPainter extends CustomPainter {
   final Color color;
   const _TLeftPainter({
-    Key? key,
     required this.color,
   });
   @override
@@ -579,7 +569,6 @@ class TRight extends StatelessWidget {
 class _TRightPainter extends CustomPainter {
   final Color color;
   const _TRightPainter({
-    Key? key,
     required this.color,
   });
   @override
@@ -635,7 +624,6 @@ class LLTop extends StatelessWidget {
 class _LLTopPainter extends CustomPainter {
   final Color color;
   const _LLTopPainter({
-    Key? key,
     required this.color,
   });
   @override
@@ -698,7 +686,6 @@ class LLBottom extends StatelessWidget {
 class _LLBottomPainter extends CustomPainter {
   final Color color;
   const _LLBottomPainter({
-    Key? key,
     required this.color,
   });
   @override
@@ -761,7 +748,6 @@ class LLLeft extends StatelessWidget {
 class _LLLeftPainter extends CustomPainter {
   final Color color;
   const _LLLeftPainter({
-    Key? key,
     required this.color,
   });
   @override
@@ -823,7 +809,6 @@ class LLRight extends StatelessWidget {
 class _LLRightPainter extends CustomPainter {
   final Color color;
   const _LLRightPainter({
-    Key? key,
     required this.color,
   });
   @override
@@ -887,7 +872,6 @@ class LTopLeftLBottomRight extends StatelessWidget {
 class _LTopLeftLBottomRightPainter extends CustomPainter {
   final Color color;
   const _LTopLeftLBottomRightPainter({
-    Key? key,
     required this.color,
   });
   @override
@@ -950,7 +934,6 @@ class LTopRightLBottomLeft extends StatelessWidget {
 class _LTopRightLBottomLeftPainter extends CustomPainter {
   final Color color;
   const _LTopRightLBottomLeftPainter({
-    Key? key,
     required this.color,
   });
   @override
@@ -1015,7 +998,6 @@ class LAll extends StatelessWidget {
 class _LAllPainter extends CustomPainter {
   final Color color;
   const _LAllPainter({
-    Key? key,
     required this.color,
   });
   @override
@@ -1097,7 +1079,6 @@ class L1 extends StatelessWidget {
 class _L1Painter extends CustomPainter {
   final Color color;
   const _L1Painter({
-    Key? key,
     required this.color,
   });
   @override
@@ -1170,7 +1151,6 @@ class L2 extends StatelessWidget {
 class _L2Painter extends CustomPainter {
   final Color color;
   const _L2Painter({
-    Key? key,
     required this.color,
   });
   @override
@@ -1243,7 +1223,6 @@ class L3 extends StatelessWidget {
 class _L3Painter extends CustomPainter {
   final Color color;
   const _L3Painter({
-    Key? key,
     required this.color,
   });
   @override
@@ -1317,7 +1296,6 @@ class L4 extends StatelessWidget {
 class _L4Painter extends CustomPainter {
   final Color color;
   const _L4Painter({
-    Key? key,
     required this.color,
   });
   @override

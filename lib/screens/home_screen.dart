@@ -185,14 +185,8 @@ class _Boton extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 3),
       child: ElevatedButton(
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(texto),
-          ],
-        ),
         style: ElevatedButton.styleFrom(
-          primary: Colors.blue,
+          backgroundColor: Colors.blue,
           minimumSize: const Size(double.infinity, 50),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(5),
@@ -201,6 +195,12 @@ class _Boton extends StatelessWidget {
         onPressed: () async {
           function();
         },
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(texto),
+          ],
+        ),
       ),
     );
   }

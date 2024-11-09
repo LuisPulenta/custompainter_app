@@ -8,7 +8,7 @@ class HeaderCurvoScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Header Curvo'),
+        title: const Text('Header Curvo'),
         centerTitle: true,
       ),
       body: const HeaderCurvo(),

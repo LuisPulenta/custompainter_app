@@ -8,7 +8,7 @@ class HeaderPicoScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Header Pico'),
+        title: const Text('Header Pico'),
         centerTitle: true,
       ),
       body: const HeaderPico(),

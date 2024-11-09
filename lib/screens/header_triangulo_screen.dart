@@ -8,7 +8,7 @@ class HeaderTrianguloScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('HeaderTrianguloScreen'),
+        title: const Text('Header Triángulo'),
         centerTitle: true,
       ),
       body: const HeaderTriangulo(),
